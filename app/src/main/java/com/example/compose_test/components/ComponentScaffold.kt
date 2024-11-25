@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 @Preview
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ComponentView1(modifier: Modifier = Modifier) {
+fun ComponentScaffold(modifier: Modifier = Modifier) {
 
     Scaffold(
         modifier = modifier,
