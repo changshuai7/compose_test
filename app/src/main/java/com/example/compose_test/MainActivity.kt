@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.compose_test.components.ColumnLazy
+import com.example.compose_test.components.ColumnListView
 import com.example.compose_test.components.ComponentScaffold
 import com.example.compose_test.ui.theme.Compose_testTheme
 
@@ -28,7 +29,8 @@ class MainActivity : ComponentActivity() {
 //                    )
 //                }
 //                ComponentScaffold()
-                ColumnLazy()
+//                ColumnLazy()
+                ColumnListView()
             }
         }
     }
