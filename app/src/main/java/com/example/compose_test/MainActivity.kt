@@ -32,6 +32,7 @@ import com.example.compose_test.components.ColumnLazy
 import com.example.compose_test.components.ColumnListView
 import com.example.compose_test.components.ComponentBaseLineToTop
 import com.example.compose_test.components.ComponentScaffold
+import com.example.compose_test.components.MyOnwColumn
 import com.example.compose_test.ui.theme.Compose_testTheme
 
 class MainActivity : ComponentActivity() {
@@ -68,7 +69,12 @@ fun ComposeBodyContent(modifier: Modifier = Modifier) {
                     .fillMaxWidth()
                     .height(1.dp)
             )
-            ComponentBaseLineToTop()
+//            ComponentBaseLineToTop()
+            MyOnwColumn() {
+                Text("Hello Compose1")
+                Text("Hello Android2")
+                Text("Hello China3")
+            }
         }
     }
 }
