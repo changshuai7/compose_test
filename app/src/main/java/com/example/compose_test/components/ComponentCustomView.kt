@@ -18,7 +18,7 @@ fun Modifier.firstBaseLineToTop(
     firstBaseLineToTop: Dp
 ): Modifier {
     return this.then(
-        other = this.layout { measurable, constraints ->
+        other = Modifier.layout { measurable, constraints ->
             val placeable = measurable.measure(constraints)
             val baseLine = placeable[FirstBaseline]
             val diff = firstBaseLineToTop.roundToPx() - baseLine
